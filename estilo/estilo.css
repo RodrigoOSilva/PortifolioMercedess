@@ -67,7 +67,7 @@ h3 {
 
 /*Efeito parallax *****************/
 
-.box1, .box2, .box3, .box4, .box5, .car1 .car2 .car3 .car4 .car5{
+.box1, .box2, .box3, .box4, .box5 {
     /*important body height = 100%;*/
     position: relative;
     height: 100%;
@@ -76,17 +76,19 @@ h3 {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-size: 99%;
+
 }
 
 .box1 {
     background-image: url(../imagens/long_desert_road_black_and_white-wallpaper-1366x768.jpg);
+    background-size: cover;
 }
 
 .car img {
     background-size: contain;
     background-repeat: no-repeat;
     height: 80%;
-    z-index: 0;
 }
 
 .box2 {
@@ -121,4 +123,67 @@ h3 {
     padding: 12px;
     font-size: 2em;
     letter-spacing: 5px;
+}
+
+
+
+/*/ Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    body {
+        height: 70%;
+    }
+    
+    .car img {
+        max-height: 140px;
+    }
+    
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    body {
+        height: 85%;
+    }
+    
+    .car img {
+        max-height: 255px;
+    }
+    
+    
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+     .navbar-brand {
+        border: 1px solid blue
+    }
+    body {
+        height: 90%;
+    }
+    
+    .car img {
+        max-height: 290px;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+    .navbar-brand {
+        border: 1px solid red
+    }
+    body {
+        height: 92%;
+    }
+    .car img {
+        max-height: 450px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    
+    .car img {
+        max-height: 550px;
+    }
 }
