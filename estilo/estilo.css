@@ -7,12 +7,13 @@ font-family: 'Open Sans Condensed', sans-serif;
     background-attachment: local;
     background-repeat: no-repeat;
     z-index: 1;
+    overflow-x: hidden;
 }
 .navbar-nav .nav-link {
     color: white;    
 }
 
-.navbar-nav .nav-link:hover {
+header .navbar-nav .nav-link:hover {
     border-bottom: 1px solid gray;
 }
 
@@ -28,7 +29,7 @@ header {
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    margin-bottom: 1px solid gray
+    margin-bottom: 1px solid gray;
 }
 
 nav.navbar-transparente {
@@ -46,7 +47,6 @@ nav.navbar-transparente {
 }
 
 h2 a {
-font-family: 'Felipa', cursive;
     display: block;
     background: rgba(00,00,00,.5); 
     text-decoration: none;
@@ -67,7 +67,7 @@ h3 {
 
 /*Efeito parallax *****************/
 
-.box1, .box2, .box3, .box4, .car1 .car2 .car3 .car4{
+.box1, .box2, .box3, .box4, .box5, .car1 .car2 .car3 .car4 .car5{
     /*important body height = 100%;*/
     position: relative;
     height: 100%;
@@ -82,57 +82,43 @@ h3 {
     background-image: url(../imagens/long_desert_road_black_and_white-wallpaper-1366x768.jpg);
 }
 
-.car1 img {
+.car img {
     background-size: contain;
     background-repeat: no-repeat;
     height: 80%;
     z-index: 0;
 }
 
-.car2 img {
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 80%;
-}
-
-.car3 img {
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 80%;
-}
-
-.car4 img {
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 80%;
-}
-
 .box2 {
-    background-image: url(../imagens/imagem4.jpg);
+    background-image: url(../imagens/sedan-black-sclass.png);
 }
 
 .box3 {
-    background-image: url(../imagens/imagem4.jpg);
+    background-image: url(../imagens/sedan-red.png);
 }
 
 .box4 {
-    background-image: url(../imagens/imagem4.jpg);
+    background-image: url(../imagens/BlueMercedes-Benz-PNG-Photo.png);
+}
+
+.box5 {
+    background-image: url(../imagens/BrownMercedes.png);
 }
 
 /*-------------*/
-/*
+
 .title-content {
     position: absolute;
     left: 0%;
     top: 45%;
     width: 100%;
     text-align: center;
+    opacity: 0.5
 }
-*/
+
 .title {
-    color: #fff;
-    background-color: #111;
+    color: #f1f1f1;
     padding: 12px;
-    font-size: 18px;
+    font-size: 2em;
     letter-spacing: 5px;
 }
